@@ -1,0 +1,146 @@
+{{ define "main" }}
+
+    <!--  Being  Hero Start -->
+    <div class="container">
+        <div class="grid grid-cols-12 gap-5 lg:py-20 py-10">
+            <div class="lg:col-span-7 col-span-12">
+                <h1 class="font-obviously font-medium lg:text-5xl text-3xl text-ThemeWhite pe-8 lg:leading-[56px] leading-9 mb-10">
+                    {{ .Params.hero_banner.title}}    
+                </h1>
+                <ul class="flex flex-col lg:text-base text-sm leading-6 text-[#BFC1C9] font-Inter font-medium">
+                    {{ range .Params.hero_banner.list }}
+                        <li class="relative before:content-list-icon before:block before:absolute before:left-0 before:w-3 before:h-3 ps-10 mb-5">
+                            {{ . }}
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="lg:col-span-5 col-span-12">
+                <div class="bg-[#0C0F19CC] h-full rounded-2xl p-10">
+                    <span
+                        class="bg-gradient-to-r from-[#D83333] to-[#F041FF] bg-clip-text text-transparent font-Inter font-medium text-[18px] mb-5">Need
+                        Custom Marketing Dashboards?</span>
+                    <h2 class="font-obviously font-normal text-xl text-ThemeWhite">Let Us Know!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Being  Hero End -->
+    <!--  Being  Brands Slider Start -->
+
+    <div class="container">
+        <div class="swiper OurPartner border-t border-[#F2F6FA29]">
+            <div class="swiper-wrapper lg:py-10 py-5">
+                {{ range .Params.brand_logos }}
+                    <div class="swiper-slide flex justify-center">
+                        <img src="{{ .img }}" class="" alt="{{ .alt }}-logo">
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <!--  Being  Brands Slider Start -->
+
+
+    {{ $marketing_cards := .Params.marketing_cards }}
+    
+    <!--  Being  Dashboard Header Start -->
+    <div class="container lg:pt-14 pt-7">
+        <div class="lg:text-center max-w-[1080px] mx-auto mb-8">
+            <h2 class="font-obviously font-medium lg:text-4xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
+                {{ $marketing_cards.title }}
+            </h2>
+            <p class="flex flex-col lg:text-base text-sm leading-6 text-[#BFC1C9] font-Inter font-medium">
+                {{ $marketing_cards.subTitle }}
+            </p>
+        </div>
+    </div>
+    <!--  Being  Dashboard Header End -->
+</div>
+    <!--  Being  Dashboard Cards Start -->
+
+<div class="container">
+    <div class="grid grid-cols-12 gap-5">
+
+        {{ range $marketing_cards.cards }}
+            <div class="lg:col-span-4 col-span-12">
+                <div class="rounded-2xl border border-[#858B9833] overflow-hidden relative group">
+                    <div
+                        class="bg-black bg-opacity-50 absolute top-0 left-0 h-full flex justify-center items-center w-full opacity-0 group-hover:opacity-100 transition-opacity">
+                        <a href="{{ .link }}"
+                            class="border border-[#858B984D] p-5 flex justify-center items-center text-[#BFC1C9] text-base font-Inter bg-[#1A1B28] rounded-xl">View
+                            Now <img src="./assets/images/logos/eye.svg" class="ms-2" alt=""></a>
+                    </div>
+                    <div class="py-4 px-6 bg-black">
+                        <img class="w-full h-auto" src="{{ .img }}"
+                            alt="{{ .title }}">
+                    </div>
+                    <div class="py-4 px-6 bg-[#0C0F19] font-Inter">
+                        <div class="font-semibold text-[18px] leading-[18px] mb-3 text-ThemeWhite">{{ .title }}</div>
+                        <p class="text-sm text-[#BFC1C9] font-normal">{{ .tagline }}</p>
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+
+    </div>
+</div>
+<!--  Being  Dashboard Cards End -->
+<!--  Being  Data Driven Start -->
+
+
+{{ $service_cards := .Params.service_cards }}
+
+<div class="lg:py-24 py-12">
+    <div class="container">
+        <div class="">
+            <span class="bg-gradient-to-r from-[#D83333] to-[#F041FF] bg-clip-text text-transparent font-Inter font-medium text-[18px] mb-5">
+                {{ $service_cards.tagline }}
+            </span>
+            <h2 class="font-obviously font-medium lg:text-4xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
+                {{ $service_cards.title }}
+            </h2>
+            <p class="flex flex-col lg:text-base text-sm leading-6 text-[#BFC1C9] font-Inter font-medium">
+                {{ $service_cards.subTitle }}    
+            </p>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <img src="{{ $service_cards.big_image }}" class="w-full h-auto lg:-mt-16 max-w-[1600px]" alt="{{ $service_cards.title }}">
+    </div>
+    <div class="container lg:-mt-32 -mt-10">
+        <div class="grid grid-cols-12 gap-5">
+
+            {{ range $service_cards.cards }}
+                <div class="lg:col-span-3 col-span-12">
+                    <img src="{{ .img }}"
+                        class="mb-6 lg:h-[70px] lg:w-[70px] h-[45px] w-[45px]" alt="{{ .title }}">
+                    <h3 class="font-Inter font-semibold text-[18px] leading-[16px] text-ThemeWhite mb-5">
+                        {{ .title }}
+                    </h3>
+                    <p class="text-base leading-6 text-[#C2C2C2] font-Inter font-normal">
+                        {{ .text }}
+                    </p>
+                </div>
+            {{ end }}
+            
+        </div>
+    </div>
+</div>
+<!--  Being  Data Driven End -->
+
+<!--  Being  Contact Form Start -->
+<div class="container lg:mb-32 mb-16">
+    <div
+        class="bg-[url('/assets/images/bg/form-bg.webp')] bg-no-repeat bg-cover rounded-2xl lg:pt-40 lg:pb-[400px] pt-20 pb-[200px] flex justify-center">
+        <div class="w-full max-w-[720px] px-4">
+            <span class="font-medium text-base text-ThemeWhite mb-3 font-urbanist">Interested in Custom Marketing
+                Dashboard Services?</span>
+            <h2
+                class="font-obviously font-medium lg:text-4xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
+                Get In Touch</h2>
+        </div>
+    </div>
+</div>
+<!--  Being  Contact Form End -->
+{{ end }}
