@@ -858,8 +858,8 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(assets\/images\/bg\/form-bg\.webp\)\] {
-  background-image: url(assets/images/bg/form-bg.webp);
+.bg-\[url\(images\/bg\/form-bg\.webp\)\] {
+  background-image: url(images/bg/form-bg.webp);
 }
 
 .bg-\[url\(images\/bg\/hero\.webp\)\] {
@@ -868,10 +868,6 @@ video {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(images\/bg\/form-bg\.webp\)\] {
-  background-image: url(images/bg/form-bg.webp);
 }
 
 .from-\[\#3245FF\] {
