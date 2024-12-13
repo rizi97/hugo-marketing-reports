@@ -69,7 +69,7 @@
                         class="bg-black bg-opacity-50 absolute top-0 left-0 h-full flex justify-center items-center w-full opacity-0 group-hover:opacity-100 transition-opacity">
                         <a href="{{ .link }}"
                             class="border border-[#858B984D] p-5 flex justify-center items-center text-[#BFC1C9] text-base font-Inter bg-[#1A1B28] rounded-xl">View
-                            Now <img src="./assets/images/logos/eye.svg" class="ms-2" alt=""></a>
+                            Now <img src='{{ "assets/images/logos/eye.svg" | relURL }}' class="ms-2" alt=""></a>
                     </div>
                     <div class="py-4 px-6 bg-black">
                         <img class="w-full h-auto" src="{{ .img }}"
@@ -131,8 +131,8 @@
 
 <!--  Being  Contact Form Start -->
 <div class="container lg:mb-32 mb-16">
-    <div
-        class="bg-[url('/assets/images/bg/form-bg.webp')] bg-no-repeat bg-cover rounded-2xl lg:pt-40 lg:pb-[400px] pt-20 pb-[200px] flex justify-center">
+    <div 
+        class="bg-[url(images/bg/form-bg.webp)] bg-no-repeat bg-cover rounded-2xl lg:pt-40 lg:pb-[400px] pt-20 pb-[200px] flex justify-center">
         <div class="w-full max-w-[720px] px-4">
             <span class="font-medium text-base text-ThemeWhite mb-3 font-urbanist">Interested in Custom Marketing
                 Dashboard Services?</span>

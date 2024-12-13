@@ -11,7 +11,7 @@ module.exports = {
         urbanist: ['Urbanist', 'sans-serif'],
       },
       content: {
-        'list-icon': 'url("/assets/images/logos/list-icon.svg")',
+        'list-icon': 'url("images/logos/list-icon.svg")',
       },
       backgroundImage: {
         'dashboard-card-gradient': 'linear-gradient(to bottom, #00000033 20%, #060913B2 20% 100%)',

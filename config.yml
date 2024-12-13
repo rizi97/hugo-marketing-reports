@@ -30,7 +30,7 @@ menu:
 
 
 Params:
-  siteLogo: "/assets/images/logos/site-logo.svg"
+  siteLogo: "assets/images/logos/site-logo.svg"
 
   Header:
     menu_right_buttons: true
@@ -41,16 +41,16 @@ Params:
 
   Footer:
     social_links:
-      - icon: /assets/images/logos/SocialMedia/facebook.svg
+      - icon: assets/images/logos/SocialMedia/facebook.svg
         link: 
         alt: facebook icon
-      - icon: /assets/images/logos/SocialMedia/pinterest.svg
+      - icon: assets/images/logos/SocialMedia/pinterest.svg
         link: 
         alt: pinterest icon
-      - icon: /assets/images/logos/SocialMedia/x.svg
+      - icon: assets/images/logos/SocialMedia/x.svg
         link: 
         alt: twitter icon
-      - icon: /assets/images/logos/SocialMedia/youtube.svg
+      - icon: assets/images/logos/SocialMedia/youtube.svg
         link: youtube.com
         alt: youtube icon
 
