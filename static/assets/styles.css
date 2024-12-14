@@ -592,12 +592,12 @@ video {
   left: 0px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .left-2\/4 {
   left: 50%;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-20 {
@@ -632,6 +632,14 @@ video {
   margin-top: -2.5rem;
 }
 
+.-mt-80 {
+  margin-top: -20rem;
+}
+
+.-mt-\[60rem\] {
+  margin-top: -60rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -644,8 +652,16 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -654,6 +670,10 @@ video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 
 .mb-8 {
@@ -666,6 +686,10 @@ video {
 
 .me-2 {
   margin-inline-end: 0.5rem;
+}
+
+.me-3 {
+  margin-inline-end: 0.75rem;
 }
 
 .ms-2 {
@@ -684,30 +708,6 @@ video {
   margin-top: 2rem;
 }
 
-.-mt-80 {
-  margin-top: -20rem;
-}
-
-.-mt-\[60rem\] {
-  margin-top: -60rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-7 {
-  margin-bottom: 1.75rem;
-}
-
-.me-3 {
-  margin-inline-end: 0.75rem;
-}
-
 .block {
   display: block;
 }
@@ -718,10 +718,6 @@ video {
 
 .flex {
   display: flex;
-}
-
-.table {
-  display: table;
 }
 
 .grid {
@@ -772,12 +768,12 @@ video {
   width: 45px;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-\[47\%\] {
   width: 47%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .min-w-9 {
@@ -882,16 +878,16 @@ video {
   row-gap: 2rem;
 }
 
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -910,20 +906,20 @@ video {
   border-radius: 10px;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
+.rounded-\[16px\] {
+  border-radius: 16px;
 }
 
 .rounded-\[20px\] {
   border-radius: 20px;
 }
 
-.rounded-\[16px\] {
-  border-radius: 16px;
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
@@ -938,16 +934,16 @@ video {
   border-bottom-width: 1px;
 }
 
-.border-t {
-  border-top-width: 1px;
-}
-
 .border-l {
   border-left-width: 1px;
 }
 
 .border-l-2 {
   border-left-width: 2px;
+}
+
+.border-t {
+  border-top-width: 1px;
 }
 
 .border-\[\#858B9833\] {
@@ -966,14 +962,14 @@ video {
   border-color: #FFFFFF29;
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-}
-
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
 .border-opacity-15 {
@@ -998,6 +994,10 @@ video {
   background-color: rgb(26 27 40 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#2C2C2C4D\] {
+  background-color: #2C2C2C4D;
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
@@ -1008,76 +1008,28 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#2C2C2C4D\] {
-  background-color: #2C2C2C4D;
-}
-
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(images\/bg\/form-bg\.webp\)\] {
-  background-image: url(images/bg/form-bg.webp);
-}
-
-.bg-\[url\(images\/bg\/hero\.webp\)\] {
-  background-image: url(images/bg/hero.webp);
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\/assets\/images\/bg\/Main-Frame\.webp\)\] {
-  background-image: url(/assets/images/bg/Main-Frame.webp);
-}
-
-.bg-\[url\(\.Params\.background\)\] {
-  background-image: url(.Params.background);
-}
-
-.bg-\[url\(\{\{\.Params\.background\}\}\)\] {
-  background-image: url({{.Params.background}});
-}
-
-.bg-\[url\(images\/bg\/Main-Frame\.webp\)\] {
-  background-image: url(images/bg/Main-Frame.webp);
-}
-
-.bg-\[url\(\'\.\/assets\/images\/bg\/GradientBlur\.webp\'\)\] {
-  background-image: url('./assets/images/bg/GradientBlur.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/images\/bg\/form-bg\.webp\'\)\] {
-  background-image: url('./assets/images/bg/form-bg.webp');
-}
-
-.bg-\[url\(\'\/assets\/images\/bg\/GradientBlur\.webp\'\)\] {
-  background-image: url('/assets/images/bg/GradientBlur.webp');
-}
-
-.bg-\[url\(\'\/assets\/images\/bg\/form-bg\.webp\'\)\] {
-  background-image: url('/assets/images/bg/form-bg.webp');
-}
-
-.bg-\[url\(\'hugo-marketing-reports\/assets\/images\/bg\/form-bg\.webp\'\)\] {
-  background-image: url('hugo-marketing-reports/assets/images/bg/form-bg.webp');
-}
-
-.bg-\[url\(\'assets\/images\/bg\/form-bg\.webp\'\)\] {
-  background-image: url('assets/images/bg/form-bg.webp');
+.bg-\[url\(\'images\/bg\/GradientBlur\.webp\'\)\] {
+  background-image: url('images/bg/GradientBlur.webp');
 }
 
 .bg-\[url\(\'images\/bg\/form-bg\.webp\'\)\] {
   background-image: url('images/bg/form-bg.webp');
 }
 
-.bg-\[url\(\'\/images\/bg\/GradientBlur\.webp\'\)\] {
-  background-image: url('/images/bg/GradientBlur.webp');
+.bg-\[url\(images\/bg\/form-bg\.webp\)\] {
+  background-image: url(images/bg/form-bg.webp);
 }
 
-.bg-\[url\(\'images\/bg\/GradientBlur\.webp\'\)\] {
-  background-image: url('images/bg/GradientBlur.webp');
+.bg-\[url\(\{\{\.Params\.background\}\}\)\] {
+  background-image: url({{.Params.background}});
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .from-\[\#3245FF\] {
@@ -1109,16 +1061,20 @@ video {
           background-clip: text;
 }
 
-.bg-center {
-  background-position: center;
-}
-
 .bg-bottom {
   background-position: bottom;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .p-10 {
@@ -1137,8 +1093,9 @@ video {
   padding: 1.5rem;
 }
 
-.p-0 {
-  padding: 0px;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -1166,6 +1123,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1176,24 +1138,14 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-\[14px\] {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-80 {
   padding-top: 20rem;
   padding-bottom: 20rem;
+}
+
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .pb-12 {
@@ -1208,12 +1160,32 @@ video {
   padding-bottom: 200px;
 }
 
+.pb-\[60rem\] {
+  padding-bottom: 60rem;
+}
+
+.pe-2 {
+  padding-inline-end: 0.5rem;
+}
+
 .pe-8 {
   padding-inline-end: 2rem;
 }
 
 .ps-10 {
   padding-inline-start: 2.5rem;
+}
+
+.ps-5 {
+  padding-inline-start: 1.25rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .pt-16 {
@@ -1230,26 +1202,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-\[60rem\] {
-  padding-bottom: 60rem;
-}
-
-.pe-2 {
-  padding-inline-end: 0.5rem;
-}
-
-.ps-5 {
-  padding-inline-start: 1.25rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
 }
 
 .text-center {
@@ -1320,6 +1272,10 @@ video {
   line-height: 1.5rem;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
 .leading-9 {
   line-height: 2.25rem;
 }
@@ -1330,10 +1286,6 @@ video {
 
 .leading-\[18px\] {
   line-height: 18px;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
 }
 
 .text-ThemeWhite {
@@ -1373,7 +1325,7 @@ video {
 @font-face {
   font-family: 'Inter';
 
-  src: url('/assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  src: url('/hugo-marketing-reports/assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
 
   font-weight: 100, 900;
 }
@@ -1381,7 +1333,7 @@ video {
 @font-face {
   font-family: 'Obviously';
 
-  src: url('/assets/fonts/Obviously/Obviously-Thin.ttf') format('truetype');
+  src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Thin.ttf') format('truetype');
 
   font-weight: 100;
 
@@ -1393,7 +1345,7 @@ video {
 @font-face {
   font-family: 'Obviously';
 
-  src: url('/assets/fonts/Obviously/Obviously-Lght.ttf') format('truetype');
+  src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Lght.ttf') format('truetype');
 
   font-weight: 200;
 
@@ -1405,7 +1357,7 @@ video {
 @font-face {
   font-family: 'Obviously';
 
-  src: url('/assets/fonts/Obviously/Obviously-Regu.ttf') format('truetype');
+  src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Regu.ttf') format('truetype');
 
   font-weight: 300;
 
@@ -1417,7 +1369,7 @@ video {
 @font-face {
   font-family: 'Obviously';
 
-  src: url('/assets/fonts/Obviously/Obviously-Semi.ttf') format('truetype');
+  src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Semi.ttf') format('truetype');
 
   font-weight: 400;
 
@@ -1429,7 +1381,7 @@ video {
 @font-face {
   font-family: 'Obviously';
 
-  src: url('/assets/fonts/Obviously/Obviously-Medi.ttf') format('truetype');
+  src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Medi.ttf') format('truetype');
 
   font-weight: 500;
 
@@ -1441,7 +1393,7 @@ video {
 @font-face {
   font-family: 'Obviously';
 
-  src: url('/assets/fonts/Obviously/Obviously-Bold.ttf') format('truetype');
+  src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Bold.ttf') format('truetype');
 
   font-weight: 600;
 
@@ -1453,7 +1405,7 @@ video {
 @font-face {
   font-family: 'Obviously';
 
-  src: url('/assets/fonts/Obviously/Obviously-ExtdSupr.ttf') format('truetype');
+  src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-ExtdSupr.ttf') format('truetype');
 
   font-weight: 800;
 
@@ -1465,7 +1417,7 @@ video {
 @font-face {
   font-family: 'Obviously';
 
-  src: url('/assets/fonts/Obviously/Obviously-ExtdBold.ttf') format('truetype');
+  src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-ExtdBold.ttf') format('truetype');
 
   font-weight: 900;
 
@@ -1477,7 +1429,7 @@ video {
 @font-face {
   font-family: 'Obviously';
 
-  src: url('/assets/fonts/Obviously/Obviously-Thin.ttf') format('truetype');
+  src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Thin.ttf') format('truetype');
 
   font-weight: 100;
 
@@ -1491,7 +1443,7 @@ video {
 @font-face {
   font-family: 'Urbanist';
 
-  src: url('/assets/fonts/urbanist/urbanist-latin-100-normal.ttf') format('ttf');
+  src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-100-normal.ttf') format('ttf');
 
   font-weight: 100;
 
@@ -1503,7 +1455,7 @@ video {
 @font-face {
   font-family: 'Urbanist';
 
-  src: url('/assets/fonts/urbanist/urbanist-latin-200-normal.ttf') format('ttf');
+  src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-200-normal.ttf') format('ttf');
 
   font-weight: 200;
 
@@ -1515,7 +1467,7 @@ video {
 @font-face {
   font-family: 'Urbanist';
 
-  src: url('/assets/fonts/urbanist/urbanist-latin-300-normal.ttf') format('ttf');
+  src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-300-normal.ttf') format('ttf');
 
   font-weight: 300;
 
@@ -1527,7 +1479,7 @@ video {
 @font-face {
   font-family: 'Urbanist';
 
-  src: url('/assets/fonts/urbanist/urbanist-latin-400-normal.ttf') format('ttf');
+  src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-400-normal.ttf') format('ttf');
 
   font-weight: 400;
 
@@ -1539,7 +1491,7 @@ video {
 @font-face {
   font-family: 'Urbanist';
 
-  src: url('/assets/fonts/urbanist/urbanist-latin-500-normal.ttf') format('ttf');
+  src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-500-normal.ttf') format('ttf');
 
   font-weight: 500;
 
@@ -1551,7 +1503,7 @@ video {
 @font-face {
   font-family: 'Urbanist';
 
-  src: url('/assets/fonts/urbanist/urbanist-latin-600-normal.ttf') format('ttf');
+  src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-600-normal.ttf') format('ttf');
 
   font-weight: 600;
 
@@ -1563,7 +1515,7 @@ video {
 @font-face {
   font-family: 'Urbanist';
 
-  src: url('/assets/fonts/urbanist/urbanist-latin-700-normal.ttf') format('ttf');
+  src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-700-normal.ttf') format('ttf');
 
   font-weight: 700;
 
@@ -1575,7 +1527,7 @@ video {
 @font-face {
   font-family: 'Urbanist';
 
-  src: url('/assets/fonts/urbanist/urbanist-latin-800-normal.ttf') format('ttf');
+  src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-800-normal.ttf') format('ttf');
 
   font-weight: 800;
 
@@ -1587,7 +1539,7 @@ video {
 @font-face {
   font-family: 'Urbanist';
 
-  src: url('/assets/fonts/urbanist/urbanist-latin-900-normal.ttf') format('ttf');
+  src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-900-normal.ttf') format('ttf');
 
   font-weight: 900;
 
@@ -1742,12 +1694,12 @@ video {
     grid-column: span 5 / span 5;
   }
 
-  .lg\:col-span-7 {
-    grid-column: span 7 / span 7;
-  }
-
   .lg\:col-span-6 {
     grid-column: span 6 / span 6;
+  }
+
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
   }
 
   .lg\:mx-0 {
@@ -1779,12 +1731,12 @@ video {
     margin-inline-end: 0.75rem;
   }
 
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .lg\:block {
@@ -1803,10 +1755,6 @@ video {
     display: none;
   }
 
-  .lg\:h-\[70px\] {
-    height: 70px;
-  }
-
   .lg\:h-\[48px\] {
     height: 48px;
   }
@@ -1817,6 +1765,10 @@ video {
 
   .lg\:h-\[60px\] {
     height: 60px;
+  }
+
+  .lg\:h-\[70px\] {
+    height: 70px;
   }
 
   .lg\:max-h-\[60px\] {
@@ -1835,10 +1787,6 @@ video {
     width: 75%;
   }
 
-  .lg\:w-\[70px\] {
-    width: 70px;
-  }
-
   .lg\:w-\[47\%\] {
     width: 47%;
   }
@@ -1853,6 +1801,10 @@ video {
 
   .lg\:w-\[60px\] {
     width: 60px;
+  }
+
+  .lg\:w-\[70px\] {
+    width: 70px;
   }
 
   .lg\:min-w-\[60px\] {
@@ -1905,6 +1857,10 @@ video {
     padding-bottom: 11rem;
   }
 
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
   .lg\:pb-\[400px\] {
     padding-bottom: 400px;
   }
@@ -1913,35 +1869,16 @@ video {
     padding-top: 3.5rem;
   }
 
-  .lg\:pt-40 {
-    padding-top: 10rem;
-  }
-
-  .lg\:pb-24 {
-    padding-bottom: 6rem;
-  }
-
   .lg\:pt-24 {
     padding-top: 6rem;
   }
 
+  .lg\:pt-40 {
+    padding-top: 10rem;
+  }
+
   .lg\:text-center {
     text-align: center;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .lg\:text-2xl {
@@ -1954,8 +1891,23 @@ video {
     line-height: 2.25rem;
   }
 
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .lg\:text-\[32px\] {
     font-size: 32px;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:leading-\[56px\] {
