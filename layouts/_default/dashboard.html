@@ -14,7 +14,7 @@
 
                     <div
                         class="lg:min-h-[60px] lg:max-h-[60px] lg:min-w-[60px] lg:max-w-[60px] max-h-[60px] min-w-[60px] rounded-full overflow-hidden flex items-center justify-center border-2 border-white">
-                        <img src="{{ .Params.hero_banner.user.img }}" class="w-full h-auto max-w-[60px]" alt="{{ .Params.hero_banner.user.name }}">
+                        <img src="{{ .Params.hero_banner.user.img | relURL }}" class="w-full h-auto max-w-[60px]" alt="{{ .Params.hero_banner.user.name }}">
                     </div>
 
                     <div class="flex flex-col items-start ms-[15px]">
@@ -31,7 +31,7 @@
         </div>
 
         <!--  Being  Hero Start -->
-        <img src="{{ .Params.hero_banner.big_image }}" class="w-full h-auto" alt="Main Content">
+        <img src="{{ .Params.hero_banner.big_image | relURL }}" class="w-full h-auto" alt="Main Content">
         <!--  Being  Hero End -->
     </div>
     <!--  Being  Dashboard Header End -->
@@ -72,7 +72,7 @@
             {{ range .Params.Services.cards }}
                 <div class="lg:col-span-3 col-span-12">
                     <div class="border border-[#FFFFFF29] p-6 rounded-[20px] bg-[#0C0F19] h-full">
-                        <img src="{{ .img }}"
+                        <img src="{{ .img | relURL }}"
                             class="mb-8 lg:h-[60px] lg:w-[60px] h-[45px] w-[45px]" alt="{{ .title }}">
                         <h3 class="font-Inter font-bold text-[18px] leading-7 text-white mb-4">
                             {{ .title }}
@@ -90,7 +90,7 @@
 
 
 <!--  Being  Why Use Start -->
-<div class="bg-[url('/assets/images/bg/GradientBlur.webp')] bg-no-repeat py-80 bg-center bg-cover -mt-80">
+<div class="bg-[url('images/bg/GradientBlur.webp')] bg-no-repeat py-80 bg-center bg-cover -mt-80">
     <div class="container lg:pt-14 pt-7">
         <div class="lg:text-center max-w-[800px] mx-auto mb-8">
             <h2 class="font-obviously font-medium lg:text-3xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
@@ -109,7 +109,7 @@
             {{ range .Params.Benefits.cards }}
                 <div class="lg:col-span-4 col-span-12">
                     <div class="rounded-[10px] bg-[#0C0F19] mb-8 overflow-hidden">
-                        <img src="{{ .img }}" class="w-full"
+                        <img src="{{ .img | relURL }}" class="w-full"
                             alt="{{ .title }}">
                     </div>
                     <h3 class="font-Inter font-bold text-[18px] leading-7 text-white mb-3">{{ .title }}</h3>
@@ -126,7 +126,7 @@
 
 <!--  Being Marketing Types Start -->
 
-<div class="lg:pt-24 pt-12 pb-[60rem] bg-[url('/assets/images/bg/GradientBlur.webp')] bg-no-repeat bg-bottom bg-cover">
+<div class="lg:pt-24 pt-12 pb-[60rem] bg-[url('images/bg/GradientBlur.webp')] bg-no-repeat bg-bottom bg-cover">
     <div class="container">
         <div class="lg:text-center max-w-[1080px] mx-auto mb-8">
             <h2 class="font-obviously font-medium lg:text-4xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
@@ -140,8 +140,8 @@
             {{ range $index, $card := .Params.Types.cards }}
                 <div class="{{ if lt $index 2 }}lg:col-span-6{{ else }}lg:col-span-4{{ end }} col-span-12">
                     <div class="border-l-2 border-[#FFFFFF29] p-6 rounded-[16px] bg-[#0C0F19] h-full">
-                        <img src="/assets/images/logos/integration.svg"
-                            class="mb-8 lg:h-[50px] lg:w-[50px] h-[45px] w-[45px]" alt="integration">
+                        <img src='{{ "assets/images/logos/integration.svg" | relURL }}'
+                            class="mb-8 lg:h-[50px] lg:w-[50px] h-[45px] w-[45px]" alt="integration-tick">
                         <h3 class="font-Inter font-bold text-[18px] leading-7 text-white mb-5">{{ $card.title }}</h3>
                         <ul class="text-base text-[#BFC1C9] font-Inter font-normal space-y-2">
                             {{ range $card.content }}
@@ -162,11 +162,11 @@
 <!--  Being Marketing Types End -->
 
 <div class="px-4 -mt-[60rem]">
-    <img src="{{ .Params.Types.image }}" class="w-full h-auto" alt="Dashboard View">
+    <img src="{{ .Params.Types.image | relURL }}" class="w-full h-auto" alt="Dashboard View">
 </div>
 
 <hr class="border-b border-[#FFFFFF29]">
-<div class="bg-[url('/assets/images/bg/GradientBlur.webp')] bg-no-repeat py-80 bg-center bg-cover -mt-80">
+<div class="bg-[url('images/bg/GradientBlur.webp')] bg-no-repeat py-80 bg-center bg-cover -mt-80">
     <div class="container lg:pt-14 pt-7">
         <div class="lg:text-center max-w-[768px] mx-auto mb-8">
             <h2 class="font-obviously font-medium lg:text-3xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
@@ -193,7 +193,7 @@
                     <div class="lg:w-[47%] w-full">
                         <div class="border border-[#FFFFFF29] p-6 rounded-[20px] bg-[#0C0F19]">
                             <div class="flex items-center mb-4">
-                                <img src="{{ $card.img }}"
+                                <img src="{{ $card.img | relURL }}"
                                     class="lg:h-[48px] lg:w-[48px] h-[45px] w-[45px] me-3"
                                     alt="{{ $card.title }}">
                                 <h3 class="font-Inter font-semibold text-[18px] leading-7 text-white">
@@ -206,7 +206,7 @@
                         </div>
                     </div>
                     <div class="z-20 lg:block hidden">
-                        <img src="/assets/images/dot.svg" alt="dot">
+                        <img src='{{"assets/images/dot.svg" | relURL }}' alt="dot">
                     </div>
                     <div class="w-[47%] lg:block hidden"></div>
                 </div>
@@ -216,12 +216,12 @@
                 <div class="flex justify-between items-center w-full left-timeline lg:mb-0 mb-4">
                     <div class="w-[47%] lg:block hidden"></div>
                     <div class="z-20 lg:block hidden">
-                        <img src="/assets/images/dot.svg" alt="dot">
+                        <img src='{{"assets/images/dot.svg" | relURL }}' alt="dot">
                     </div>
                     <div class="lg:w-[47%] w-full">
                         <div class="border border-[#FFFFFF29] p-6 rounded-[20px] bg-[#0C0F19]">
                             <div class="flex items-center mb-4">
-                                <img src="{{ $card.img }}"
+                                <img src="{{ $card.img | relURL }}"
                                     class="lg:h-[48px] lg:w-[48px] h-[45px] w-[45px] me-3"
                                     alt="{{ $card.title }}">
                                 <h3 class="font-Inter font-semibold text-[18px] leading-7 text-white">
@@ -242,8 +242,8 @@
 
 <!--  Being  Data Driven Start -->
 
-<div class="lg:pt-24 py-12 bg-[url('/assets/images/bg/GradientBlur.webp')] bg-no-repeat shadow-bg -mt-80">
-    <div class="bg-[url('/assets/images/bg/GradientBlur.webp')] bg-no-repeat bg-cover py-80 bg-center">
+<div class="lg:pt-24 py-12 bg-[url('images/bg/GradientBlur.webp')] bg-no-repeat shadow-bg -mt-80">
+    <div class="bg-[url('images/bg/GradientBlur.webp')] bg-no-repeat bg-cover py-80 bg-center">
         <div class="container border-t border-[#FFFFFF29] pt-14">
             <div class="lg:text-center max-w-[1080px] mx-auto mb-8">
                 <h2 class="font-obviously font-medium lg:text-4xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
@@ -262,7 +262,7 @@
             {{ range .Params.Why_Choose.cards }}
                 <div class="lg:col-span-3 col-span-12">
                     <div class="border-l border-[#FFFFFF29] px-5 h-full">
-                        <img src="{{ .img }}"
+                        <img src="{{ .img | relURL }}"
                             class="mb-4 lg:h-[48px] lg:w-[48px] h-[45px] w-[45px]" alt="{{ .title }}">
                         <h3 class="font-Inter font-bold text-[18px] leading-7 text-white mb-2">
                             {{ .title }}
@@ -275,7 +275,7 @@
             {{ end }}
 
             <div class="lg:col-span-6 col-span-12">
-                <img src="{{ .Params.Why_Choose.image }}" class="w-full h-auto" alt="{{ .Params.Why_Choose.title }}">
+                <img src="{{ .Params.Why_Choose.image | relURL }}" class="w-full h-auto" alt="{{ .Params.Why_Choose.title }}">
             </div>
         </div>
     </div>
@@ -300,7 +300,7 @@
             {{ range .Params.Additional_Factors.cards }}
                 <div class="lg:col-span-4 col-span-12">
                     <div class="border border-[#FFFFFF29] p-6 rounded-[16px] bg-[#0C0F19] h-full">
-                        <img src="/assets/images/logos/integration.svg"
+                        <img src=' {{"assets/images/logos/integration.svg" | relURL }}'
                             class="mb-8 lg:h-[50px] lg:w-[50px] h-[45px] w-[45px]" alt="integration-tick">
                         <h3 class="font-Inter font-bold text-[18px] leading-7 text-white mb-4">{{ .title }}</h3>
                         <p class="text-base leading-6 text-[#BFC1C9] font-Inter font-normal">{{ .text }}</p>
@@ -316,7 +316,7 @@
 <!--  Being  Contact Form Start -->
 <div class="container mb-7 lg:mt-0 mt-5">
     <div
-        class="bg-[url('/assets/images/bg/form-bg.webp')] bg-no-repeat bg-cover rounded-2xl lg:py-44 py-20  flex justify-center">
+        class="bg-[url('images/bg/form-bg.webp')] bg-no-repeat bg-cover rounded-2xl lg:py-44 py-20  flex justify-center">
         <div class="w-full max-w-[740px] px-4 text-center">
             <h2 class="font-obviously font-medium lg:text-[32px] text-3xl text-white lg:leading-[56px] leading-10 mb-4">
                 {{ .Params.Contact.title }}      
@@ -329,7 +329,7 @@
                 <span class="bg-gradient-to-r from-[#3245FF] to-[#B845ED] bg-clip-text text-transparent me-2">
                     {{ .Params.Contact.button_text }}  
                 </span>
-                <img src="/assets/images/logos/arrow-to-right.svg" alt="arrow to right">
+                <img src='{{"assets/images/logos/arrow-to-right.svg" | relURL }}' alt="arrow to right">
             </a>
         </div>
     </div>

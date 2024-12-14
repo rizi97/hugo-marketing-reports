@@ -2,12 +2,12 @@
    <div class="container">
        <div class="flex justify-between lg:flex-row flex-col border-b border-[#FFFFFF29] pb-12 gap-6">
            <div class="w-1/5">
-               <img src="{{ .Site.Params.siteLogo }}" alt="{{ .Site.Title }} logo">
+               <img src="{{ .Site.Params.siteLogo | relURL }}" alt="{{ .Site.Title }} logo">
                <ul class="flex gap-2 mt-8">
                     {{ range .Site.Params.Footer.social_links }}   
                         <li class="h-9 w-9 min-w-9 rounded-full p-2 border border-[#858B9833] flex items-center justify-center">
                             <a href="{{ .link }}">
-                                <img src="{{ .icon }}" alt="{{ .alt }}">
+                                <img src="{{ .icon | relURL }}" alt="{{ .alt }}">
                             </a>
                         </li>
                     {{ end }}
