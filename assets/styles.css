@@ -1060,6 +1060,26 @@ video {
   background-image: url('/assets/images/bg/form-bg.webp');
 }
 
+.bg-\[url\(\'hugo-marketing-reports\/assets\/images\/bg\/form-bg\.webp\'\)\] {
+  background-image: url('hugo-marketing-reports/assets/images/bg/form-bg.webp');
+}
+
+.bg-\[url\(\'assets\/images\/bg\/form-bg\.webp\'\)\] {
+  background-image: url('assets/images/bg/form-bg.webp');
+}
+
+.bg-\[url\(\'images\/bg\/form-bg\.webp\'\)\] {
+  background-image: url('images/bg/form-bg.webp');
+}
+
+.bg-\[url\(\'\/images\/bg\/GradientBlur\.webp\'\)\] {
+  background-image: url('/images/bg/GradientBlur.webp');
+}
+
+.bg-\[url\(\'images\/bg\/GradientBlur\.webp\'\)\] {
+  background-image: url('images/bg/GradientBlur.webp');
+}
+
 .from-\[\#3245FF\] {
   --tw-gradient-from: #3245FF var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(50 69 255 / 0) var(--tw-gradient-to-position);
