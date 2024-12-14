@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Home
+background: images/bg/hero.webp
 hero_banner:
   title: "Marketing Dashboards for Effortless Reporting"
   list:
@@ -54,8 +55,8 @@ marketing_cards:
 
 
 service_cards:
-  title: Popular Marketing Dashboards
-  subTitle: While we offer a wide range of pre-built dashboards, you can customize them to suit your unique needs—integrate your platforms, define specific KPI metrics, choose chart styles (line, bar, pie, table), adjust layouts, tweak font sizes, and even personalize the color scheme.
+  title: Delivered Delightfully
+  subTitle: Accelerate insights with ready-to-use marketing dashboards.  Explore our library of pre-built, customizable dashboards designed for marketing teams. Save time and get instant access to key metrics, optimized visualizations, and actionable insights tailored to your business. Perfect for tracking campaign performance, ad spend, SEO, and more—our dashboards are built to integrate seamlessly with your data and can be personalized to meet your unique needs.
   tagline: Data-Driven Decisions,
   big_image: assets/images/Delivered-Delightfully.png
   cards:
