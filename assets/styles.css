@@ -712,16 +712,16 @@ video {
   margin-inline-start: 15px;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .block {
@@ -1000,6 +1000,10 @@ video {
   --tw-border-opacity: 0.2;
 }
 
+.bg-\[\#0609138C\] {
+  background-color: #0609138C;
+}
+
 .bg-\[\#0C0F19CC\] {
   background-color: #0C0F19CC;
 }
@@ -1032,10 +1036,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#0609138C\] {
-  background-color: #0609138C;
-}
-
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1050,10 +1050,6 @@ video {
 
 .bg-\[url\(images\/bg\/form-bg\.webp\)\] {
   background-image: url(images/bg/form-bg.webp);
-}
-
-.bg-\[url\(\{\{\.Params\.background\}\}\)\] {
-  background-image: url({{.Params.background}});
 }
 
 .bg-gradient-to-r {
@@ -1105,10 +1101,6 @@ video {
   padding: 0px;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -1155,6 +1147,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1180,21 +1177,12 @@ video {
   padding-bottom: 14px;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
 
 .pb-8 {
   padding-bottom: 2rem;
-}
-
-.pb-\[200px\] {
-  padding-bottom: 200px;
 }
 
 .pb-\[60rem\] {
@@ -1231,10 +1219,6 @@ video {
 
 .pt-16 {
   padding-top: 4rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .pt-7 {
@@ -1933,22 +1917,18 @@ video {
     padding-bottom: 6rem;
   }
 
-  .lg\:py-44 {
-    padding-top: 11rem;
-    padding-bottom: 11rem;
-  }
-
   .lg\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
 
-  .lg\:pb-24 {
-    padding-bottom: 6rem;
+  .lg\:py-44 {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
   }
 
-  .lg\:pb-\[400px\] {
-    padding-bottom: 400px;
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
   }
 
   .lg\:pt-14 {
@@ -1957,10 +1937,6 @@ video {
 
   .lg\:pt-24 {
     padding-top: 6rem;
-  }
-
-  .lg\:pt-40 {
-    padding-top: 10rem;
   }
 
   .lg\:text-center {
