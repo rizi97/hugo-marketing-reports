@@ -31,7 +31,7 @@
            
            <header class="py-4">
                <div class="flex justify-between items-center">
-                    <a href="http://localhost:1313/hugo-marketing-reports/">
+                    <a href="https://rizi97.github.io/hugo-marketing-reports/">
                         <img src="/hugo-marketing-reports/assets/images/logos/site-logo.svg" alt="Marketing Reports logo">
                     </a>
                    <nav class="nav-list" id="toggle-menu">
@@ -103,11 +103,43 @@
                 </ul>
             </div>
             <div class="lg:col-span-5 col-span-12">
-                <div class="bg-[#0C0F19CC] h-full rounded-2xl p-10">
-                    <span
-                        class="bg-gradient-to-r from-[#D83333] to-[#F041FF] bg-clip-text text-transparent font-Inter font-medium text-[18px] mb-5">Need
-                        Custom Marketing Dashboards?</span>
-                    <h2 class="font-obviously font-normal text-xl text-ThemeWhite">Let Us Know!</h2>
+                <div class="bg-[#0C0F19CC] h-full rounded-2xl lg:p-10 p-5">
+                    <div class="mb-3">
+                        <span
+                            class="bg-gradient-to-r from-[#D83333] to-[#F041FF] bg-clip-text text-transparent font-Inter font-medium text-[18px] mb-5">Need
+                            Custom Marketing Dashboards?</span>
+                        <h2 class="font-obviously font-normal text-xl text-ThemeWhite">Let Us Know!</h2>
+                    </div>
+                    <form id="hero_form" action="https://formspree.io/f/meoqwybq" method="POST">
+                        <div class="mb-2">
+                            <label class="font-Inter font-semibold text-sm text-[#9CA3AF] mb-[4px] inline-block" for="name">Name</label>
+                            <div class="relative">
+                                <img src='/hugo-marketing-reports/assets/images/icons/form/user.svg' class="absolute top-[14px] left-[14px]" alt="user icon">
+                                <input class="rounded-lg border border-[#F2F6FA29] font-Inter font-normal text-sm text-[#9ca3af] bg-transparent p-[14px] ps-11 block w-full focus:outline-none focus:border-[#4b2d8c] placeholder:text-[#9CA3AF66]" type="text" name="name" placeholder="Enter name" id="name" required />
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label class="font-Inter font-semibold text-sm text-[#9CA3AF] mb-[4px] inline-block" for="email-address">Email Address</label>
+                            <div class="relative">
+                                <img src='/hugo-marketing-reports/assets/images/icons/form/email.svg' class="absolute top-[14px] left-[14px]" alt="email icon">
+                            <input class="rounded-lg border border-[#F2F6FA29] font-Inter font-normal text-sm text-[#9ca3af] bg-transparent p-[14px] ps-11 block w-full focus:outline-none focus:border-[#4b2d8c] placeholder:text-[#9CA3AF66]" type="email" name="email" placeholder="Enter email" id="email-address" required />
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <label class="font-Inter font-semibold text-sm text-[#9CA3AF] mb-[4px] inline-block" for="Company">Company</label>
+                            <div class="relative">
+                                <img src='/hugo-marketing-reports/assets/images/icons/form/company.png' class="absolute top-[14px] left-[14px]" alt="company icon">
+                            <input class="rounded-lg border border-[#F2F6FA29] font-Inter font-normal text-sm text-[#9ca3af] bg-transparent p-[14px] ps-11 block w-full focus:outline-none focus:border-[#4b2d8c] placeholder:text-[#9CA3AF66]" type="text" name="company" placeholder="Enter Company" id="Company" />
+                        </div>
+                        </div>
+
+                        <button type="submit"
+                            class="text-white bg-white px-5 py-[14px] font-semibold text-[14px] rounded-[10px] border-2 border-white border-opacity-15 flex justify-center items-center w-full">
+                            <span
+                                class="bg-gradient-to-r from-[#3245FF] to-[#B845ED] bg-clip-text text-transparent me-2">Submit</span>
+                            <img src='/hugo-marketing-reports/assets/images/logos/arrow-to-right.svg' alt="arrow right">
+                        </button>
+                    </form>  
                 </div>
             </div>
         </div>
@@ -361,13 +393,59 @@
 
 <div class="container lg:mb-32 mb-16">
     <div 
-        class="bg-[url(images/bg/form-bg.webp)] bg-no-repeat bg-cover rounded-2xl lg:pt-40 lg:pb-[400px] pt-20 pb-[200px] flex justify-center">
+        class="bg-[url(images/bg/form-bg.webp)] bg-no-repeat bg-cover rounded-2xl lg:py-32 py-16 flex justify-center">
         <div class="w-full max-w-[720px] px-4">
-            <span class="font-medium text-base text-ThemeWhite mb-3 font-urbanist">Interested in Custom Marketing
-                Dashboard Services?</span>
-            <h2
-                class="font-obviously font-medium lg:text-4xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
-                Get In Touch</h2>
+            <div>
+                <span class="font-medium text-base text-ThemeWhite mb-3 font-urbanist">Interested in Custom Marketing
+                    Dashboard Services?</span>
+                <h2
+                    class="font-obviously font-medium lg:text-4xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
+                    Get In Touch</h2>
+            </div>
+
+            <form id="contact_form" class="grid grid-cols-12 gap-4" action="https://formspree.io/f/meoqwybq" method="POST">
+                <div class="lg:col-span-6 col-span-12">
+                    <label class="font-Inter font-semibold text-sm text-ThemeWhite mb-[4px] inline-block" for="contact-name">Name</label>
+                    <div class="relative">
+                        <img src='/hugo-marketing-reports/assets/images/icons/form/user-white.svg' class="absolute top-[14px] left-[14px]" alt="user icon">
+                        <input class="rounded-lg border border-[#F2F6FA29] font-Inter font-normal text-sm text-ThemeWhite bg-[#0609138C] p-[14px] ps-11 block w-full focus:outline-none placeholder:text-[#F2F6FA66]" type="text" name="name" placeholder="Enter name" id="contact-name" required  />
+                    </div>
+                </div>
+                <div class="lg:col-span-6 col-span-12">
+                    <label class="font-Inter font-semibold text-sm text-ThemeWhite mb-[4px] inline-block" for="contact-email">Email Address</label>
+                    <div class="relative">
+                        <img src='/hugo-marketing-reports/assets/images/icons/form/email-white.svg' class="absolute top-[14px] left-[14px]" alt="email">
+                        <input class="rounded-lg border border-[#F2F6FA29] font-Inter font-normal text-sm text-ThemeWhite bg-[#0609138C] p-[14px] ps-11 block w-full focus:outline-none placeholder:text-[#F2F6FA66]" type="email" name="email" placeholder="Enter email" id="contact-email" required />
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-6 col-span-12">
+                    <label class="font-Inter font-semibold text-sm text-ThemeWhite mb-[4px] inline-block" for="contact-Phone">Phone (Optional)</label>
+                    <div class="relative">
+                        <img src='/hugo-marketing-reports/assets/images/icons/form/phone.svg' class="absolute top-[14px] left-[14px]" alt="phone">
+                    <input class="rounded-lg border border-[#F2F6FA29] font-Inter font-normal text-sm text-ThemeWhite bg-[#0609138C] p-[14px] ps-11 block w-full focus:outline-none placeholder:text-[#F2F6FA66]" type="text" name="company" placeholder="Enter Phone" id="contact-Phone" />
+                </div>
+                </div>
+                <div class="lg:col-span-6 col-span-12">
+                    <label class="font-Inter font-semibold text-sm text-ThemeWhite mb-[4px] inline-block" for="contact-Company">Company (Optional)</label>
+                    <div class="relative">
+                        <img src='/hugo-marketing-reports/assets/images/icons/form/company-white.png' class="absolute top-[14px] left-[14px]" alt="company white">
+                    <input class="rounded-lg border border-[#F2F6FA29] font-Inter font-normal text-sm text-ThemeWhite bg-[#0609138C] p-[14px] ps-11 block w-full focus:outline-none placeholder:text-[#F2F6FA66]" type="text" name="company" placeholder="Enter Company" id="contact-Company" />
+                </div>
+                </div>
+                <div class="col-span-12">
+                    <label class="font-Inter font-semibold text-sm text-ThemeWhite mb-[4px] inline-block" for="contact-Typing">Typing</label>
+                    <textarea class="rounded-lg border border-[#F2F6FA29] font-Inter font-normal text-sm text-ThemeWhite bg-[#0609138C] p-[14px] block w-full focus:outline-none placeholder:text-[#F2F6FA66]" name="typing" placeholder="Write here..." required id="contact-Typing" ></textarea>
+                </div>
+
+                <button type="submit"
+                    class="text-white bg-white px-5 py-[14px] font-semibold text-[14px] rounded-[10px] border-2 border-white border-opacity-15 flex justify-center items-center w-full col-span-12 lg:mt-5 mt-3">
+                    <span
+                        class="bg-gradient-to-r from-[#3245FF] to-[#B845ED] bg-clip-text text-transparent me-2">Send message</span>
+                    <img src='/hugo-marketing-reports/assets/images/logos/arrow-to-right.svg' alt="arrow right">
+                </button>
+        
+            </form>
         </div>
     </div>
 </div>
