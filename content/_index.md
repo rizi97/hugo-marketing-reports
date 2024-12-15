@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-background: images/bg/hero.webp
+background: assets/images/bg/hero.webp
 hero_banner:
   title: "Marketing Dashboards for Effortless Reporting"
   list:
