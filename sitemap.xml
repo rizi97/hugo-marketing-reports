@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rizi97.github.io/hugo-marketing-reports/categories/</loc>
+    <loc>/hugo-marketing-reports/categories/</loc>
   </url><url>
-    <loc>https://rizi97.github.io/hugo-marketing-reports/dashboard/</loc>
+    <loc>/hugo-marketing-reports/dashboard/</loc>
   </url><url>
-    <loc>https://rizi97.github.io/hugo-marketing-reports/</loc>
+    <loc>/hugo-marketing-reports/</loc>
   </url><url>
-    <loc>https://rizi97.github.io/hugo-marketing-reports/tags/</loc>
+    <loc>/hugo-marketing-reports/tags/</loc>
   </url>
 </urlset>
